@@ -6,8 +6,15 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Adactin_Login_Cucumber_Base {
 
-	//WebDriver driver;
+	
+	
+	//static WebDriver driver;
 
+	public static void maxWindow(WebDriver driver) {
+		driver.manage().window().maximize();
+	}
+	
+	
 	public static void launchurl(WebDriver driver, String s) {
 		driver.get(s);
 	}
