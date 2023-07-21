@@ -18,6 +18,10 @@ public class Adactin_Login_Cucumber_Base {
 		System.out.println(titleName);
 
 	}
+	public static void toFetchurl(WebDriver driver) {
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
+	}
 	
 	public static void launchurl(WebDriver driver, String s) {
 		driver.get(s);
