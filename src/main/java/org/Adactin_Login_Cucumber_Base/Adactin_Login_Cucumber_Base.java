@@ -13,7 +13,11 @@ public class Adactin_Login_Cucumber_Base {
 	public static void maxWindow(WebDriver driver) {
 		driver.manage().window().maximize();
 	}
-	
+	public static void toFetchTitle(WebDriver driver) {
+		String titleName = driver.getTitle();
+		System.out.println(titleName);
+
+	}
 	
 	public static void launchurl(WebDriver driver, String s) {
 		driver.get(s);
